@@ -3,7 +3,6 @@
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 
 on init
-    wait /dev/qseecom
     start vendor.qseecomd
 
 service vendor.qseecomd /vendor/bin/qseecomd
@@ -11,4 +10,3 @@ service vendor.qseecomd /vendor/bin/qseecomd
     user root
     group root
     disabled
-
