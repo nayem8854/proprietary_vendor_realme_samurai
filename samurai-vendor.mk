@@ -554,7 +554,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
     awinic.haptic.effect \
-    vendor.qti.hardware.bluetooth_audio@2.1-impl \
     libFileMux_proprietary \
     libadpcmdec \
     libbluetooth_audio_session_qti_2_1 \
