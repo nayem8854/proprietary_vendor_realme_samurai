@@ -444,7 +444,6 @@ PRODUCT_PACKAGES += \
     libq3dtools_adreno \
     libq3dtools_esx \
     android.hardware.bluetooth@1.0-impl-qti \
-    audio.bluetooth_qti.default \
     sound_trigger.primary.msmnile \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
     vendor.qti.hardware.bluetooth_sar@1.1-impl \
@@ -556,7 +555,6 @@ PRODUCT_PACKAGES += \
     awinic.haptic.effect \
     libFileMux_proprietary \
     libadpcmdec \
-    libbluetooth_audio_session_qti_2_1 \
     libfastcrc \
     libmmrtpdecoder_proprietary \
     libmmrtpencoder_proprietary \
