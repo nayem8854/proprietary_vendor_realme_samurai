@@ -443,12 +443,8 @@ PRODUCT_PACKAGES += \
     libVkLayer_ADRENO_qprofiler \
     libq3dtools_adreno \
     libq3dtools_esx \
-    android.hardware.bluetooth@1.0-impl-qti \
     sound_trigger.primary.msmnile \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
-    vendor.qti.hardware.bluetooth_sar@1.1-impl \
-    vendor.qti.hardware.btconfigstore@1.0-impl \
-    vendor.qti.hardware.btconfigstore@2.0-impl \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vulkan.adreno \
     libC2D2 \
@@ -472,7 +468,6 @@ PRODUCT_PACKAGES += \
     libcdsp_default_listener \
     libcdsprpc \
     libdiag \
-    libdsi_netctrl \
     libdsutils \
     libfastcvdsp_stub \
     libfastcvopt \
@@ -645,12 +640,16 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.1 \
     com.qualcomm.qti.uceservice@2.2 \
     deviceInfoServiceModule \
+    android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.gnss@2.1-impl-qti \
     camera.qcom \
     com.qti.chi.override \
     vendor.qti.gnss@4.0-impl \
     vendor.qti.hardware.alarm@1.0-impl \
+    vendor.qti.hardware.bluetooth_sar@1.1-impl \
+    vendor.qti.hardware.btconfigstore@1.0-impl \
+    vendor.qti.hardware.btconfigstore@2.0-impl \
     vendor.qti.hardware.qccvndhal@1.0-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.qti.hardware.qteeconnector@1.0-impl \
@@ -750,6 +749,7 @@ PRODUCT_PACKAGES += \
     libdpps \
     libdrmfs \
     libdrmtime \
+    libdsi_netctrl \
     libgdtap \
     libgeofencing \
     libgnss \
@@ -1009,7 +1009,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.wifidisplaysession_aidl-V2-ndk \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
-    liboemcrypto \
     libwvdrmengine \
     libsn100u_fw \
     libhaptic_effect \
@@ -1044,6 +1043,7 @@ PRODUCT_PACKAGES += \
     libhwconfigurationutil \
     libifaa_factory \
     libmpbase \
+    liboemcrypto \
     libormshalclient \
     libqsee_keybox_ca \
     librpmbengclient \
