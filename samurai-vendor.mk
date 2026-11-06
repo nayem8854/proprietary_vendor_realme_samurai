@@ -714,7 +714,6 @@ PRODUCT_PACKAGES += \
     libasn1cper \
     libasn1crt \
     libasn1crtx \
-    libavservices_minijail \
     libbase64 \
     libbatching \
     libbt-hidlclient \
@@ -1058,7 +1057,6 @@ PRODUCT_PACKAGES += \
     libwatermark_photo \
     libwvhidl \
     vendor.oplus.hardware.appradio@1.0 \
-    vendor.oplus.hardware.biometrics.fingerprint@2.1 \
     vendor.oplus.hardware.biometrics.fingerprintpay@1.0 \
     vendor.oplus.hardware.commondcs@1.0 \
     vendor.oplus.hardware.cryptoeng@1.0 \

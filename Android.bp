@@ -6,6 +6,7 @@ soong_namespace {
     imports: [
         "device/realme/samurai",
         "hardware/oplus",
+        "hardware/qcom-caf/common/libqti-perfd-client",
         "hardware/qcom-caf/sm8150",
         "hardware/qcom-caf/wlan",
         "vendor/qcom/opensource/commonsys/display",
@@ -405,28 +406,6 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libdiag",
-                "libqmiservices",
-                "libqmi_cci",
-                "libbtnv",
-                "android.hardware.bluetooth@1.0",
-                "libsoc_helper",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so",
@@ -450,7 +429,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "both",
+    compile_multilib: "64",
     relative_install_path: "hw",
     prefer: true,
     soc_specific: true,
@@ -565,25 +544,6 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libbase",
-                "libcutils",
-                "vendor.qti.hardware.bluetooth_sar@1.0",
-                "vendor.qti.hardware.bluetooth_sar@1.1",
-                "android.hardware.bluetooth@1.0-impl-qti",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so",
@@ -604,7 +564,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "both",
+    compile_multilib: "64",
     relative_install_path: "hw",
     prefer: true,
     soc_specific: true,
@@ -617,24 +577,6 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "vendor.qti.hardware.btconfigstore@1.0",
-                "android.hardware.bluetooth@1.0-impl-qti",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so",
@@ -654,7 +596,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "both",
+    compile_multilib: "64",
     relative_install_path: "hw",
     prefer: true,
     soc_specific: true,
@@ -667,24 +609,6 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "vendor.qti.hardware.btconfigstore@2.0",
-                "android.hardware.bluetooth@1.0-impl-qti",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so",
@@ -704,7 +628,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "both",
+    compile_multilib: "64",
     relative_install_path: "hw",
     prefer: true,
     soc_specific: true,
@@ -1255,7 +1179,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libhidlmemory",
                 "android.hidl.memory@1.0",
-                "vendor.qti.qspmhal@1.0",
                 "libdl",
                 "libz",
                 "liblog",
@@ -1275,7 +1198,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libhidlmemory",
                 "android.hidl.memory@1.0",
-                "vendor.qti.qspmhal@1.0",
                 "libdl",
                 "libz",
                 "liblog",
@@ -1764,30 +1686,6 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libdsi_netctrl.so",
-            ],
-            shared_libs: [
-                "libqdi",
-                "libdiag",
-                "libcutils",
-                "liblog",
-                "libnetmgr",
-                "libdsutils",
-                "libconfigdb",
-                "libqmiservices",
-                "libqmi_cci",
-                "libqmi_common_so",
-                "libqmi_client_qmux",
-                "libqmi_client_helper",
-                "libqmi",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libdsi_netctrl.so",
@@ -1813,7 +1711,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "both",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -9110,7 +9008,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libOPLUS_aisd.so",
             ],
             shared_libs: [
-                "libml_util",
                 "libSNPE",
                 "libsnpeml",
                 "libc++_shared",
@@ -10062,32 +9959,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libasn1crtx.so",
             ],
             shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libavservices_minijail",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libavservices_minijail.so",
-            ],
-            shared_libs: [
-                "libba_s",
-                "libminijail",
                 "libc++",
                 "libc",
                 "libm",
@@ -11282,7 +11153,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libhidltransport",
                 "libhidlmemory",
-                "vendor.qti.hardware.improvetouch.touchcompanion@1.0",
                 "android.hidl.allocator@1.0",
                 "android.hidl.memory@1.0",
                 "libc++",
@@ -17593,7 +17463,6 @@ cc_prebuilt_library_shared {
                 "libhidltransport",
                 "libbase",
                 "libutils",
-                "libQTEEConnector_system",
                 "vendor.qti.hardware.qteeconnector@1.0",
                 "android.hidl.allocator@1.0",
                 "android.hidl.memory@1.0",
@@ -18384,26 +18253,6 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
-            srcs: [
-                "proprietary/odm/lib/liboemcrypto.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libQSEEComAPI",
-                "libhidlbase",
-                "libcpion",
-                "libminkdescriptor",
-                "libcutils",
-                "libtrustedapploader",
-                "libdisplayconfig.qti",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
         android_arm64: {
             srcs: [
                 "proprietary/odm/lib64/liboemcrypto.so",
@@ -18425,7 +18274,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "both",
+    compile_multilib: "64",
     prefer: true,
     device_specific: true,
 }
@@ -18618,7 +18467,6 @@ cc_prebuilt_library_shared {
                 "libEGL",
                 "libnativewindow",
                 "libhidlbase",
-                "libbsproxy",
                 "libqdMetaData",
                 "vendor.qti.hardware.camera.postproc@1.0",
                 "libc++",
@@ -19508,7 +19356,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libSNPE",
-                "libml_util",
                 "libc++_shared",
                 "libc",
                 "libm",
@@ -19692,37 +19539,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/vendor.oplus.hardware.appradio@1.0.so",
             ],
             shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.biometrics.fingerprint@2.1",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so",
-            ],
-            shared_libs: [
-                "android.hardware.biometrics.fingerprint@2.1",
-                "android.hardware.biometrics.fingerprint@2.2",
-                "android.hardware.biometrics.fingerprint@2.3",
                 "libhidlbase",
                 "liblog",
                 "libutils",
